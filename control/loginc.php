@@ -10,7 +10,6 @@
     if (verify($correo, $contrasena)){
         $_SESSION['correo'] = $correo;
         echo "<script>alert('bienvenido'); window.location='../index.php'</script>";
-        //exit();
     } else {
         echo "<script>alert('correo o contraseña incorrectos'); window.location='../login.php'</script>";
     }
